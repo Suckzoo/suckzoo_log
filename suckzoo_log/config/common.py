@@ -26,7 +26,10 @@ class Common(Configuration):
         # Your apps
         'authentication',
         'users',
-	'tokens'
+	'tokens',
+	'cafes',
+	'tags',
+	'reviews'
 
     )
 
