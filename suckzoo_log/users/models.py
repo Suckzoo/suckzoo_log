@@ -6,10 +6,12 @@ from django.contrib.auth.models import AbstractUser
 from django.utils.encoding import python_2_unicode_compatible
 # from django.utils.translation import ugettext_lazy as _
 
+from tokens.models import Token
 
 @python_2_unicode_compatible
 class User(AbstractUser):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    credential = models.ForeignKey(Token)
 
     def __str__(self):
         return self.username
