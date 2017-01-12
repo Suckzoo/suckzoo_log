@@ -1,0 +1,11 @@
+site_name: suckzoo_log
+site_description: suckzoo log
+repo_url: https://github.com/suckzoo/suckzoo_log
+site_dir: site
+copyright: Copyright &copy; 2015, <a href="https://github.com/suckzoo">suckzoo</a>.
+
+pages:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
